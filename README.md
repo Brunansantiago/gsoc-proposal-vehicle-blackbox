@@ -1,9 +1,11 @@
 # gsoc-proposal-vehicle-blackbox
 
 Resumo
+
        Este repositório documenta o desenvolvimento de uma prova de conceito de um gateway de segurança independente, projetado para atuar como uma "Caixa Preta" veicular. A proposta central deste sistema é o envio automatizado de mensagens para uma central de resgates contendo as coordenadas geográficas precisas do acidente, garantindo que as vítimas sejam localizadas e socorridas com a maior agilidade possível, mesmo em situações de falha elétrica total do veículo.
 
 Justificativa
+
        A fundamentação deste trabalho parte da análise de dados críticos de segurança viária no Brasil. Segundo registros da Polícia Rodoviária Federal (PRF) e dados do DATASUS, eventos de alto impacto cinético, como capotamentos e saídas de pista, apresentam taxas de letalidade desproporcionais nas rodovias federais. Estudos do IPEA corroboram que essa mortalidade é agravada em zonas rurais ou de difícil acesso, onde a imobilização do veículo retarda drasticamente a janela de tempo necessária para o resgate. Paralelamente, no escopo de veículos autônomos e drones, a ejeção da bateria durante o impacto é a principal causa de perda definitiva de equipamentos de alto custo.
       Diante dessa problemática, identifica-se uma vulnerabilidade em sistemas embarcados convencionais: a dependência direta do barramento de energia principal. Se a bateria é destruída no impacto, a comunicação cessa instantaneamente, tornando o veículo e seus ocupantes invisíveis para o sistema de emergência justamente no momento mais crítico.
       O objetivo deste projeto é aplicar fundamentos de circuitos elétricos e programação para propor uma solução prática para esse problema. O sistema funciona como uma rede de segurança de último recurso (safety net of last resort), capaz de identificar o acidente de forma autônoma e utilizar uma reserva capacitiva isolada para transmitir o pedido de socorro, otimizando a logística de salvamento e a recuperação de ativos.
