@@ -1,7 +1,6 @@
 # gsoc-proposal-vehicle-blackbox
 
 Resumo
-
        Este repositório documenta o desenvolvimento de uma prova de conceito de um gateway de segurança independente, projetado para atuar como uma "Caixa Preta" veicular. A proposta central deste sistema é o envio automatizado de mensagens para uma central de resgates contendo as coordenadas geográficas precisas do acidente, garantindo que as vítimas sejam localizadas e socorridas com a maior agilidade possível, mesmo em situações de falha elétrica total do veículo.
 
 Justificativa
