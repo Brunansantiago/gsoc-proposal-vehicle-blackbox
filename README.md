@@ -17,15 +17,15 @@ O código foi feito em C++ e sua simulação foi realizada pelo Wokwi.
 
 Metodologia de Funcionamento:
 
-Detecção de Impacto por Duplo Gatilho: Algoritmo que monitora continuamente a Força G (> 4.0G) e o ângulo de inclinação (Roll > 70°). A máquina de estados cruza essas variáveis para garantir que o pedido de resgate seja real, mitigando falsos positivos.
-Interrupção de Hardware (GPIO Sense): Monitoramento da queda de tensão no barramento principal, sinalizando a perda de energia milissegundos antes da falha total do processador.
-Transmissão "Death Gasp": Rotina que utiliza a energia armazenada nos supercapacitores para despachar um payload JSON para a nuvem, contendo o diagnóstico da falha e as coordenadas geográficas para o resgate.
-Modo Beacon (Sinalizador): Após o alerta inicial, o sistema entra em Deep Sleep e desperta periodicamente a cada 10 minutos para emitir sinais de localização, auxiliando as equipes de busca em campo.
+Detecção de Impacto por Duplo Gatilho: Algoritmo que monitora continuamente a Força G (> 4.0G) e o ângulo de inclinação (Roll > 70°). A máquina de estados cruza essas variáveis para garantir que o pedido de resgate seja real, mitigando falsos positivos;
+Interrupção de Hardware (GPIO Sense): Monitoramento da queda de tensão no barramento principal, sinalizando a perda de energia milissegundos antes da falha total do processador;
+Transmissão "Death Gasp": Rotina que utiliza a energia armazenada nos supercapacitores para despachar um payload JSON para a nuvem, contendo o diagnóstico da falha e as coordenadas geográficas para o resgate;
+Modo Beacon (Sinalizador): Após o alerta inicial, o sistema entra em Deep Sleep e desperta periodicamente a cada 10 minutos para emitir sinais de localização, auxiliando as equipes de busca em campo;
 Isolamento Elétrico: Uso de Diodo Schottky para impedir que um curto-circuito na bateria principal do veículo drene a energia emergencial do banco de supercapacitores.
 
 Etapas do projeto:
 
-Modelagem da máquina de estados e algoritmos de filtragem no simulador Wokwi.
-Integração com a nuvem e validação de tráfego de pacotes via MQTT.
-Prototipagem do circuito de isolamento e análise da curva de descarga do supercapacitor.
+Modelagem da máquina de estados e algoritmos de filtragem no simulador Wokwi;
+Integração com a nuvem e validação de tráfego de pacotes via MQTT;
+Prototipagem do circuito de isolamento e análise da curva de descarga do supercapacitor;
 Design e roteamento da Placa de Circuito Impresso (PCB).
